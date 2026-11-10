@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "title": {
+    "en": "lcf2212dev DSH plugins",
+    "pt": "Plugins DSH de lcf2212dev"
+  },
+  "description": {
+    "en": "DeepSeek Harness bundles published by lcf2212dev: bits and teams, the Claude Code delegate tool, and Figma MCP over OAuth.",
+    "pt": "Bundles do DeepSeek Harness publicados por lcf2212dev: bits e times, a tool de delegação ao Claude Code e o Figma MCP com OAuth."
+  },
+  "metadata": {
+    "categories": {
+      "agents": {
+        "title": { "en": "Agents and delegation", "pt": "Agentes e delegação" }
+      },
+      "tools": {
+        "title": { "en": "Tools and integrations", "pt": "Ferramentas e integrações" }
+      }
+    },
+    "labels": {
+      "claude": {
+        "title": { "en": "Claude", "pt": "Claude" }
+      },
+      "figma": {
+        "title": { "en": "Figma", "pt": "Figma" }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "@local/dsh-bots",
+      "title": { "en": "Bits", "pt": "Bits" },
+      "description": {
+        "en": "Flow workers that receive a request and return a response, teams of bits with a visual flow editor, and projects that group teams.",
+        "pt": "Fluxos que recebem uma requisição e devolvem uma resposta, times de bits com editor visual de fluxo e projetos que agrupam times."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-bits/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-bits",
+      "repository": { "url": "https://github.com/lcf2212dev/dsh-bits" },
+      "metadata": {
+        "category": "agents",
+        "keywords": ["bits", "teams", "flow-editor", "projects", "claude-delegate"]
+      },
+      "versions": [
+        {
+          "version": "0.4.0",
+          "publishTimestamp": 1794333576,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-bits",
+            "commit": "45e62e75e6124f7103c529b7d8fdbc87d1b03573"
+          },
+          "engines": { "dsh": ">=0.2.2-rc.1" }
+        }
+      ]
+    },
+    {
+      "name": "@local/dsh-claude-delegate",
+      "title": { "en": "Claude Delegate", "pt": "Claude Delegate" },
+      "description": {
+        "en": "The claude_delegate tool: hand a task to the host Claude Code CLI, choosing model and effort per call.",
+        "pt": "A tool claude_delegate: entrega uma tarefa à CLI do Claude Code do host, escolhendo modelo e effort por chamada."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-claude-delegate/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-claude-delegate",
+      "repository": { "url": "https://github.com/lcf2212dev/dsh-claude-delegate" },
+      "metadata": {
+        "category": "agents",
+        "keywords": ["claude", "claude-code", "delegate", "subagent"],
+        "labels": ["claude"]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794333576,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-claude-delegate",
+            "commit": "d711ac1e37141472071ba543d49358d3a0126f5f"
+          },
+          "engines": { "dsh": ">=0.2.2-rc.1" }
+        }
+      ]
+    },
+    {
+      "name": "@local/dsh-figma-mcp-oauth",
+      "title": { "en": "Figma MCP (OAuth)", "pt": "Figma MCP (OAuth)" },
+      "description": {
+        "en": "Connects Figma's MCP server with OAuth and makes its design tools available to the agent.",
+        "pt": "Conecta o servidor MCP do Figma com OAuth e disponibiliza as ferramentas de design ao agente."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-figma-mcp-oauth/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-figma-mcp-oauth",
+      "repository": { "url": "https://github.com/lcf2212dev/dsh-figma-mcp-oauth" },
+      "metadata": {
+        "category": "tools",
+        "keywords": ["figma", "mcp", "oauth", "design"],
+        "labels": ["figma"]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794333576,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-figma-mcp-oauth",
+            "commit": "26f8573d918b2d3423ef06ed0383b8a5d3aa0e7a"
+          },
+          "engines": { "dsh": ">=0.2.2-rc.1" }
+        }
+      ]
+    }
+  ]
+}
