@@ -1,42 +1,42 @@
 # dsh-plugin-index
 
-Índice de plugins (formato 1) do **DeepSeek Harness**: lista bundles que eu publico, para instalar direto pela aba **Discover** do DSH.
+Plugin index (format 1) for **DeepSeek Harness**: lists the bundles I publish, so they can be installed straight from DSH's **Discover** tab.
 
 ```text
 https://raw.githubusercontent.com/lcf2212dev/dsh-plugin-index/main/index.json
 ```
 
-## Como adicionar no DSH
+## How to add it in DSH
 
-1. Abra **Plugins** na barra lateral.
-2. Em **Experimental plugins**, ligue **Custom plugin indexes** — a página passa a ter as abas **Installed** e **Discover**.
-3. Abra **Discover** e clique em **Add index source**.
-4. Cole a URL acima e confirme.
+1. Open **Plugins** in the sidebar.
+2. Under **Experimental plugins**, turn on **Custom plugin indexes** — the page then has **Installed** and **Discover** tabs.
+3. Open **Discover** and click **Add index source**.
+4. Paste the URL above and confirm.
 
-O DSH busca e valida o índice; a busca, os filtros e o botão **Install** aparecem em seguida. A instalação usa o spec exato da versão (Git com commit fixado), com o diálogo de confiança normal do DSH.
+DSH fetches and validates the index; search, filters, and the **Install** button appear right after. Installation uses the exact version spec (Git with a pinned commit), with DSH's normal trust dialog.
 
-## O que está no índice
+## What is in the index
 
-| Pacote | Versão | Repositório |
+| Package | Version | Repository |
 |---|---|---|
 | `@dsh-burn-plugins/dsh-bots` (Bits) | 0.4.0 | [dsh-bits](https://github.com/lcf2212dev/dsh-bits) |
 | `@dsh-burn-plugins/dsh-claude-delegate` | 0.1.0 | [dsh-claude-delegate](https://github.com/lcf2212dev/dsh-claude-delegate) |
 | `@dsh-burn-plugins/dsh-figma-mcp-oauth` | 0.1.0 | [dsh-figma-mcp-oauth](https://github.com/lcf2212dev/dsh-figma-mcp-oauth) |
 
-## Como atualizar uma entrada
+## How to update an entry
 
-O índice fixa o commit que foi publicado. Para soltar uma versão nova:
+The index pins the commit that was published. To ship a new version:
 
-1. Publique a versão no repositório do plugin e pegue o SHA completo de 40 caracteres do commit.
-2. Em `index.json`, adicione um objeto em `versions` com o `version` do `package.json`, o `commit` novo e um `publishTimestamp` (Unix, em segundos).
-3. Valide e faça commit/push. O DSH relê o índice (cache de 10 minutos; há botão de refresh no Discover).
+1. Publish the version in the plugin repository and get the full 40-character commit SHA.
+2. In `index.json`, add an object to `versions` with the `version` from `package.json`, the new `commit`, and a `publishTimestamp` (Unix, in seconds).
+3. Validate and commit/push. DSH re-reads the index (10-minute cache; there is a refresh button in Discover).
 
-O validador é o mesmo do DSH: `parseMarketIndex` de `@deepseek-ai/dsh-plugin-market-index`.
+The validator is the same one DSH uses: `parseMarketIndex` from `@deepseek-ai/dsh-plugin-market-index`.
 
-## Formato
+## Format
 
-[Formato 1](https://github.com/deepseek-ai/deepseek-harness): `format`, `title`, `description`, `metadata` (categorias, labels, sort keys) e `plugins[]`; cada plugin tem `name`, textos localizados, `icon`, `author`, `homepage`, `repository` e `versions[]` com `version`, `publishTimestamp`, `source` (`npm` ou `git` + commit) e `engines.dsh`.
+[Format 1](https://github.com/deepseek-ai/deepseek-harness): `format`, `title`, `description`, `metadata` (categories, labels, sort keys) and `plugins[]`; each plugin has `name`, localized texts, `icon`, `author`, `homepage`, `repository`, and `versions[]` with `version`, `publishTimestamp`, `source` (`npm` or `git` + commit), and `engines.dsh`.
 
-## Licença
+## License
 
 [MIT](LICENSE).

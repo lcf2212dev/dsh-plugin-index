@@ -1,39 +1,33 @@
 {
   "format": 1,
   "title": {
-    "en": "lcf2212dev DSH plugins",
-    "pt": "Plugins DSH de lcf2212dev"
+    "en": "lcf2212dev DSH plugins"
   },
   "description": {
-    "en": "DeepSeek Harness bundles published by lcf2212dev: bits and teams, the Claude Code delegate tool, and Figma MCP over OAuth.",
-    "pt": "Bundles do DeepSeek Harness publicados por lcf2212dev: bits e times, a tool de delegação ao Claude Code e o Figma MCP com OAuth."
+    "en": "DeepSeek Harness bundles published by lcf2212dev: bits and teams, the Claude Code delegate tool, and Figma MCP over OAuth."
   },
   "metadata": {
     "categories": {
       "agents": {
         "title": {
-          "en": "Agents and delegation",
-          "pt": "Agentes e delegação"
+          "en": "Agents and delegation"
         }
       },
       "tools": {
         "title": {
-          "en": "Tools and integrations",
-          "pt": "Ferramentas e integrações"
+          "en": "Tools and integrations"
         }
       }
     },
     "labels": {
       "claude": {
         "title": {
-          "en": "Claude",
-          "pt": "Claude"
+          "en": "Claude"
         }
       },
       "figma": {
         "title": {
-          "en": "Figma",
-          "pt": "Figma"
+          "en": "Figma"
         }
       }
     }
@@ -42,12 +36,10 @@
     {
       "name": "@dsh-burn-plugins/dsh-bots",
       "title": {
-        "en": "Bits",
-        "pt": "Bits"
+        "en": "Bits"
       },
       "description": {
-        "en": "Flow workers that receive a request and return a response, teams of bits with a visual flow editor, and projects that group teams.",
-        "pt": "Fluxos que recebem uma requisição e devolvem uma resposta, times de bits com editor visual de fluxo e projetos que agrupam times."
+        "en": "Flow workers that receive a request and return a response, teams of bits with a visual flow editor, and projects that group teams."
       },
       "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-bits/main/icon.svg",
       "author": "lcf2212dev",
@@ -83,12 +75,10 @@
     {
       "name": "@dsh-burn-plugins/dsh-claude-delegate",
       "title": {
-        "en": "Claude Delegate",
-        "pt": "Claude Delegate"
+        "en": "Claude Delegate"
       },
       "description": {
-        "en": "The claude_delegate tool: hand a task to the host Claude Code CLI, choosing model and effort per call.",
-        "pt": "A tool claude_delegate: entrega uma tarefa à CLI do Claude Code do host, escolhendo modelo e effort por chamada."
+        "en": "The claude_delegate tool: hand a task to the host Claude Code CLI, choosing model and effort per call."
       },
       "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-claude-delegate/main/icon.svg",
       "author": "lcf2212dev",
@@ -126,12 +116,10 @@
     {
       "name": "@dsh-burn-plugins/dsh-figma-mcp-oauth",
       "title": {
-        "en": "Figma MCP (OAuth)",
-        "pt": "Figma MCP (OAuth)"
+        "en": "Figma MCP (OAuth)"
       },
       "description": {
-        "en": "Connects Figma's MCP server with OAuth and makes its design tools available to the agent.",
-        "pt": "Conecta o servidor MCP do Figma com OAuth e disponibiliza as ferramentas de design ao agente."
+        "en": "Connects Figma's MCP server with OAuth and makes its design tools available to the agent."
       },
       "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-figma-mcp-oauth/main/icon.svg",
       "author": "lcf2212dev",
