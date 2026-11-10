@@ -19,9 +19,9 @@ O DSH busca e valida o índice; a busca, os filtros e o botão **Install** apare
 
 | Pacote | Versão | Repositório |
 |---|---|---|
-| `@local/dsh-bots` (Bits) | 0.4.0 | [dsh-bits](https://github.com/lcf2212dev/dsh-bits) |
-| `@local/dsh-claude-delegate` | 0.1.0 | [dsh-claude-delegate](https://github.com/lcf2212dev/dsh-claude-delegate) |
-| `@local/dsh-figma-mcp-oauth` | 0.1.0 | [dsh-figma-mcp-oauth](https://github.com/lcf2212dev/dsh-figma-mcp-oauth) |
+| `@dsh-burn-plugins/dsh-bots` (Bits) | 0.4.0 | [dsh-bits](https://github.com/lcf2212dev/dsh-bits) |
+| `@dsh-burn-plugins/dsh-claude-delegate` | 0.1.0 | [dsh-claude-delegate](https://github.com/lcf2212dev/dsh-claude-delegate) |
+| `@dsh-burn-plugins/dsh-figma-mcp-oauth` | 0.1.0 | [dsh-figma-mcp-oauth](https://github.com/lcf2212dev/dsh-figma-mcp-oauth) |
 
 ## Como atualizar uma entrada
 
