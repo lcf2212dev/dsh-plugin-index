@@ -60,11 +60,11 @@
       "versions": [
         {
           "version": "0.4.0",
-          "publishTimestamp": 1794334282,
+          "publishTimestamp": 1794335954,
           "source": {
             "type": "git",
             "url": "https://github.com/lcf2212dev/dsh-bits",
-            "commit": "bba720a759f265d5e5766344f6799a071e9fe50f"
+            "commit": "a5dd5220637396250866e4bf7d95e46d798439bc"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"
@@ -101,11 +101,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794334282,
+          "publishTimestamp": 1794335954,
           "source": {
             "type": "git",
             "url": "https://github.com/lcf2212dev/dsh-claude-delegate",
-            "commit": "7fb7c69c62e6eeb6caad0abfac4ce12848396df9"
+            "commit": "69804a061b7f8a0a38b1b6f217104282a83ac669"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"
@@ -142,11 +142,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794334282,
+          "publishTimestamp": 1794335954,
           "source": {
             "type": "git",
             "url": "https://github.com/lcf2212dev/dsh-figma-mcp-oauth",
-            "commit": "6a292471ca7706feb5fd3db685e19a3b1e18c448"
+            "commit": "6415aac2662c6aa14c3ea469cb2246ee63572cbe"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"
