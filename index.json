@@ -4,7 +4,7 @@
     "en": "lcf2212dev DSH plugins"
   },
   "description": {
-    "en": "DeepSeek Harness bundles published by lcf2212dev: bits and teams, the Claude Code delegate tool, and Figma MCP over OAuth."
+    "en": "DeepSeek Harness bundles published by lcf2212dev: bits and teams, the Claude Code delegate tool, image creation and inspection, Figma MCP over OAuth, and Android phone access."
   },
   "metadata": {
     "categories": {
@@ -28,6 +28,11 @@
       "figma": {
         "title": {
           "en": "Figma"
+        }
+      },
+      "android": {
+        "title": {
+          "en": "Android"
         }
       }
     }
@@ -100,6 +105,18 @@
       },
       "versions": [
         {
+          "version": "0.2.1",
+          "publishTimestamp": 1794483999,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-claude-delegate",
+            "commit": "db51b04d8664cbd31f6cf43fb6f108defa341095"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        },
+        {
           "version": "0.1.0",
           "publishTimestamp": 1794335954,
           "source": {
@@ -147,6 +164,175 @@
             "type": "git",
             "url": "https://github.com/lcf2212dev/dsh-figma-mcp-oauth",
             "commit": "6415aac2662c6aa14c3ea469cb2246ee63572cbe"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@dsh-burn-plugins/dsh-image-creator",
+      "title": {
+        "en": "Image creator"
+      },
+      "description": {
+        "en": "The create_image tool: turns a text prompt into a PNG, JPEG, WebP or SVG file, designed through claude_delegate and rendered locally with Chrome or librsvg/ImageMagick. Blocks other image-generation tools by default."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-image-creator/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-image-creator",
+      "repository": {
+        "url": "https://github.com/lcf2212dev/dsh-image-creator"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "image",
+          "create-image",
+          "image-generation",
+          "svg",
+          "claude-delegate"
+        ],
+        "labels": [
+          "claude"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794697702,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-image-creator",
+            "commit": "1d5d4d3198a8ba234206b5453bb68fb01e46d8f9"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@dsh-burn-plugins/dsh-image-viewer",
+      "title": {
+        "en": "Image viewer"
+      },
+      "description": {
+        "en": "The view_image tool: inspects an image file through claude_delegate, so a session model without image input can still work with images. Replaces the built-in read_image by default."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-image-viewer/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-image-viewer",
+      "repository": {
+        "url": "https://github.com/lcf2212dev/dsh-image-viewer"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "image",
+          "view-image",
+          "vision",
+          "ocr",
+          "claude-delegate"
+        ],
+        "labels": [
+          "claude"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794695070,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-image-viewer",
+            "commit": "01da55d02f82709a0fb1655ca9910df75dca00e3"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@dsh-burn-plugins/dsh-mobile",
+      "title": {
+        "en": "DSH in your pocket"
+      },
+      "description": {
+        "en": "Your Harness Sessions on an Android phone: list, read, answer, stop and start them from any network over an end-to-end-encrypted relay. The Android app is built from the repository."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-android/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-android",
+      "repository": {
+        "url": "https://github.com/lcf2212dev/dsh-android"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "mobile",
+          "android",
+          "sessions",
+          "relay",
+          "end-to-end-encryption"
+        ],
+        "labels": [
+          "android"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794695087,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-android",
+            "commit": "63e92d0ac966eb9906f0d556acb78fab9d313f92"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@dsh-burn-plugins/dsh-remote-control",
+      "title": {
+        "en": "Phone remote control"
+      },
+      "description": {
+        "en": "Full control of an Android phone from the agent: screen, input, apps, files, shell and personal data over local ADB or an end-to-end-encrypted relay. The companion app is built from the repository."
+      },
+      "icon": "https://raw.githubusercontent.com/lcf2212dev/dsh-remote-control/main/icon.svg",
+      "author": "lcf2212dev",
+      "homepage": "https://github.com/lcf2212dev/dsh-remote-control",
+      "repository": {
+        "url": "https://github.com/lcf2212dev/dsh-remote-control"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "android",
+          "phone",
+          "adb",
+          "remote-control",
+          "relay",
+          "shizuku"
+        ],
+        "labels": [
+          "android"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794695070,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-remote-control",
+            "commit": "35d2242d5eec6edc4fd40cd1ff3193a644d67c25"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"
