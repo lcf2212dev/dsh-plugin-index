@@ -64,6 +64,18 @@
       },
       "versions": [
         {
+          "version": "0.5.0",
+          "publishTimestamp": 1794483987,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/lcf2212dev/dsh-bits",
+            "commit": "7ef92e75c9cd439ba521249611107f5d6b62a3b1"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        },
+        {
           "version": "0.4.0",
           "publishTimestamp": 1794335983,
           "source": {

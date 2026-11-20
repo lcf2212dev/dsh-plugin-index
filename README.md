@@ -19,7 +19,7 @@ DSH fetches and validates the index; search, filters, and the **Install** button
 
 | Package | Version | Repository |
 |---|---|---|
-| `@dsh-burn-plugins/dsh-bots` (Bits) | 0.4.0 | [dsh-bits](https://github.com/lcf2212dev/dsh-bits) |
+| `@dsh-burn-plugins/dsh-bots` (Bits) | 0.5.0 | [dsh-bits](https://github.com/lcf2212dev/dsh-bits) |
 | `@dsh-burn-plugins/dsh-claude-delegate` | 0.2.1 | [dsh-claude-delegate](https://github.com/lcf2212dev/dsh-claude-delegate) |
 | `@dsh-burn-plugins/dsh-figma-mcp-oauth` | 0.1.0 | [dsh-figma-mcp-oauth](https://github.com/lcf2212dev/dsh-figma-mcp-oauth) |
 | `@dsh-burn-plugins/dsh-image-creator` | 0.1.0 | [dsh-image-creator](https://github.com/lcf2212dev/dsh-image-creator) |
@@ -27,7 +27,7 @@ DSH fetches and validates the index; search, filters, and the **Install** button
 | `@dsh-burn-plugins/dsh-mobile` (DSH in your pocket) | 1.1.0 | [dsh-android](https://github.com/lcf2212dev/dsh-android) |
 | `@dsh-burn-plugins/dsh-remote-control` | 1.0.0 | [dsh-remote-control](https://github.com/lcf2212dev/dsh-remote-control) |
 
-The two image bundles call the `claude_delegate` tool with the `fable` model, so they need `dsh-claude-delegate` 0.2.1 or later installed alongside them; the 0.1.0 release, still listed, rejects that model.
+The two image bundles call the `claude_delegate` tool with the `fable` model, so they need `dsh-claude-delegate` 0.2.1 or later installed alongside them; the 0.1.0 release, still listed, rejects that model. Bits workers that run on the Claude subscription go through the same tool and expect 0.2.1 or later too.
 
 The two phone bundles do not include their Android apps: build the APK from the repository (`dsh-mobile`: `mobile/scripts/build-apk.sh`; `dsh-remote-control`: `app/build.sh`, then point `apkPath` at it). `dsh-remote-control` also ships the Shizuku helper APK.
 
